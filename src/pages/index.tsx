@@ -27,6 +27,6 @@ export default function Home() {
        <Image src={avatar} alt="Girl Codding" />
      </main>
     </>
-  );
+  )
 }    
     
