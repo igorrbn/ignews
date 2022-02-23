@@ -1,10 +1,9 @@
 import Head from 'next/head';
+import { SubscribeButton } from '../components/SubscribeButton';
 
 import styles from './home.module.scss';
 
-import Image from "next/image";
 
-import avatar from "../../../public/images/avatar.svg";
 
 
 export default function Home() {
@@ -17,14 +16,16 @@ export default function Home() {
      <main className={styles.contentContainer}>
        <section className={styles.hero}>
          <span>👏 Hey, welcome</span>
-         <h1>News about the <span>React</span>world.</h1>
+         <h1>News about the <span>React</span> world.</h1>
          <p>
            Get acess to all publications <br />
-           <span>for $9.99 month</span>
+           <span>for $9.90 month</span>
          </p>
+         <SubscribeButton />
        </section>
 
-       <Image src={avatar} alt="Girl Codding" />
+       <img src="/images/avatar.svg" alt="Girl coding" />
+
      </main>
     </>
   )
